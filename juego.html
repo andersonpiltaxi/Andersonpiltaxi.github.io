@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Adivina la Puerta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    /* Estilos para el menú */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #f2f2f2;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      left: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .puertas {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 100px;
+    }
+
+    .puerta {
+      position: relative;
+      width: 100px;
+      height: 150px;
+      background: brown;
+      border: 4px solid #333;
+      cursor: pointer;
+    }
+
+    .contenido {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: gold;
+      color: black;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .puerta.mostrando .contenido {
+      display: flex;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav>
+    <ul>
+       <li><a href="tabla.html">tabla</a></li>
+      <li><a href="pagina.html">Inicio</a></li>
+      <li><a href="video.html">videos</a></li>
+      <li><a href="juego.html">juego</a></li>
+        <li><a href="formulario.html">formulario</a></li>
+      
+    </ul>
+  </nav>
+
+  <h1>🎁 Adivina la Puerta</h1>
+  <p>¡Una de estas puertas tiene un premio!</p>
+
+  <div class="puertas">
+    <div class="puerta" onclick="mostrar(this)"><div class="contenido"></div></div>
+    <div class="puerta" onclick="mostrar(this)"><div class="contenido"></div></div>
+    <div class="puerta" onclick="mostrar(this)"><div class="contenido"></div></div>
+  </div>
+
+  <button onclick="reiniciar()">🔁 Intentar de nuevo</button>
+
+  <script>
+    let puertas;
+    let premio;
+
+    function reiniciar() {
+      puertas = document.querySelectorAll('.puerta');
+      premio = Math.floor(Math.random() * 3);
+
+      puertas.forEach((puerta, i) => {
+        puerta.classList.remove('mostrando');
+        const contenido = puerta.querySelector('.contenido');
+        contenido.textContent = i === premio ? '¡Ganaste! 🎉' : 'Naditaa 😢';
+      });
+    }
+
+    function mostrar(puerta) {
+      puerta.classList.add('mostrando');
+    }
+
+    reiniciar();
+  </script>
+
+</body>
+</html>

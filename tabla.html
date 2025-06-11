@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking de Mejores Músicas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0f1b3f, #1d3d8b);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: #0f1b3f;
+      padding: 40px 20px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    header h2 {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    nav {
+      margin: 30px auto;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    li {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 12px 20px;
+      transition: background-color 0.3s;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    li:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    table {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      color: white;
+    }
+
+    thead {
+      background-color: #ffcc00;
+      color: black;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    tr:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .genre {
+      font-style: italic;
+      color: #ffd;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Ranking de Mejores Músicas</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="pagina.html">Inicio</a></li>
+      <li><a href="video.html">Videos</a></li>
+      <li><a href="formulario.html">Formulario</a></li>
+      <li><a href="tabla.html">Tabla</a></li>
+      <li><a href="texto.html">Texto</a></li>
+    </ul>
+  </nav>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Canción</th>
+        <th>Artista</th>
+        <th>Género</th>
+        <th>Año</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Bohemian Rhapsody</td><td>Queen</td><td class="genre">Rock</td><td>1975</td></tr>
+      <tr><td>2</td><td>Billie Jean</td><td>Michael Jackson</td><td class="genre">Pop</td><td>1982</td></tr>
+      <tr><td>3</td><td>Shape of You</td><td>Ed Sheeran</td><td class="genre">Pop</td><td>2017</td></tr>
+      <tr><td>4</td><td>Smells Like Teen Spirit</td><td>Nirvana</td><td class="genre">Grunge</td><td>1991</td></tr>
+      <tr><td>5</td><td>Despacito</td><td>Luis Fonsi ft. Daddy Yankee</td><td class="genre">Reguetón</td><td>2017</td></tr>
+      <tr><td>6</td><td>Hotel California</td><td>The Eagles</td><td class="genre">Rock</td><td>1976</td>
+      </tbody>

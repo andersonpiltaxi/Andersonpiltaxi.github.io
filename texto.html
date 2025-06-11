@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0f1b3f, #1d3d8b);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: #0f1b3f;
+      padding: 40px 20px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    header h2 {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    nav {
+      margin: 30px auto;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    li {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 12px 20px;
+      transition: background-color 0.3s;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    li:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .seccion {
+      margin: 30px auto;
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .titulo {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+
+    code {
+      background-color: #333;
+      color: #ffcc00;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    mark {
+      background-color: yellow;
+      color: black;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Texto</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="pagina.html">Inicio</a></li>
+      <li><a href="video.html">Videos</a></li>
+      <li><a href="formulario.html">Formulario</a></li>
+      <li><a href="tabla.html">Tabla</a></li>
+      <li><a href="texto.html">Texto</a></li>
+    </ul>
+  </nav>
+
+  <div class="seccion">
+    <div class="titulo">1. Negrita</div>
+    <p>Este texto está en <strong>negrita</strong> usando la etiqueta <code>&lt;strong&gt;</code>.</p>
+  </div>
+
+  <div class="seccion">
+    <div class="titulo">2. Cursiva</div>
+    <p>Este texto está en <em>cursiva</em> usando la etiqueta <code>&lt;em&gt;</code>.</p>
+  </div>
+
+  <div class="seccion">
+    <div class="titulo">3. Texto resaltado</div>
+    <p>Este es un <mark>texto resaltado</mark> usando la etiqueta <code>&lt;mark&gt;</code>.</p>
+  </div>
+
+  <div class="seccion">
+    <div class="titulo">4. Texto tachado</div>
+    <p>Este texto está <del>tachado</del> usando la etiqueta <code>&lt;del&gt;</code>.</p>
+  </div>
+
+  <div class="seccion">
+    <div class="titulo">5. Salto de línea</div>
+    <p>Este texto está en la primera línea.<br>
+    Y este texto aparece en la <strong>siguiente línea</strong> gracias a la etiqueta <code>&lt;br&gt;</code>.</p>
+  </div>
+
+
+
+</body>
+</html>
